@@ -13,17 +13,17 @@
                             </a>
                             <div class="nav-collapse">
                                 <ul class="nav"> 
-                                    <li ><a class="brand" href="<?php echo base_url("painel"); ?>"><strong>SiCad</strong></a></li>
+                                    <li ><a class="brand" href="<?php echo base_url("painel"); ?>"><strong>Sis-Tel</strong></a></li>
                                     <li class="divider-vertical"></li>
                                     <li><a href="<?php echo base_url("usuarios"); ?>"><strong>Usuários</strong></a></li>
                                     <li class="divider-vertical"></li>
-                                    <li><a href="<?php echo base_url("aluno"); ?>"><strong>Aluno</strong></a></li>
+                                    <li><a href="<?php echo base_url("aluno"); ?>"><strong>Alunos</strong></a></li>
                                     <li class="divider-vertical"></li>
-                                    <li><a href="<?php echo base_url("salgados/cadastrar"); ?>" ><strong>Turmas</strong></a></li>
+                                    <li><a href="<?php echo base_url("cursos"); ?>" ><strong>Cursos</strong></a></li>
                                     <li class="divider-vertical"></li>
-                                    <li><a href="<?php echo base_url("kits/cadastrar"); ?>"><strong>Recados</strong></a></li>
+                                    <li><a href="<?php echo base_url("comentarios"); ?>"><strong>Comentários</strong></a></li>
                                     <li class="divider-vertical"></li>
-                                    <li><a href="<?php echo base_url("eventos/cadastrar"); ?>"><strong>Contato</strong></a></li>
+                                    <li><a href="<?php echo base_url("contato"); ?>"><strong>Contato</strong></a></li>
                                     <li class="divider-vertical"></li>
                                 </ul>
                                 <ul class="nav pull-right">

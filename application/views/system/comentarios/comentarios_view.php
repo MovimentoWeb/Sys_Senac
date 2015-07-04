@@ -2,10 +2,8 @@
     <div class="row-fluid">
         <div class="span3">
             <ul class="nav nav-tabs nav-stacked">
-                <li class="alert alert-danger"><strong>Painel Aluno</strong></li>
-                <li><a  href="<?php echo base_url("aluno/cadastrar"); ?>">Cadastrar</a></li>
-                <li><a  href="<?php echo base_url("aluno/gerenciar"); ?>">Gerenciar</a></li>
-                <li><a  href="<?php echo base_url("aluno/desativados"); ?>">Desativados</a></li>
+                <li class="alert alert-danger"><strong>Painel Comentários</strong></li>
+                <li><a  href="<?php echo base_url("comentarios"); ?>">Gerenciar</a></li>
             </ul>
         </div>
         <div class="span9">
