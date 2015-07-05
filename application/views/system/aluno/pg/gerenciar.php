@@ -4,10 +4,8 @@
     <table class="table table-hover table-striped">
         <thead>
             <tr>
-                <th>Cod</th>
-                <th>Título</th>
+                <th>Nome</th>
                 <th>Detalhes</th>
-                <th>Categorias</th>
                 <th style="text-align: center">Ações</th>
             </tr>
         </thead>
@@ -17,22 +15,43 @@
             //foreach ($dados as $linha) {
             ?>
             <tr>
-                <td><?php //printf('%s', $linha->idposts);    ?></td>
-                <td style="min-width: 100px "><?php // printf('%s', $linha->nome)    ?></td>
+                <td><?php //printf('%s', $linha->idposts);           ?> REginaldo José de Lima</td>
                 <td style="max-width: 300px">
-                    <p><strong>Detalhes</strong><?php //printf('%s', $linha->detalhes)    ?></p>
-                    <p><strong>Postado por:</strong> <?php // printf('%s', $linha->idposts)    ?> </p>
-                    <p><strong>Data postagem</strong><?php // printf('%s', $linha->idposts)    ?></p>
+                    <p><strong>Último Curso</strong><?php //printf('%s', $linha->detalhes)           ?> Informática básica</p>
+                    <p><strong>Ano de conclusão:</strong> <?php // printf('%s', $linha->idposts)           ?> 2009</p>
                 </td>
-                <td style="max-width: 200px;">
-                    Categorias1; Categorias1; Categorias1; Categorias1; Categorias1; Categorias1; 
+                <td>
+                    <a href="<?php echo base_url("aluno/ligar"); ?>" class="btn btn-block btn-primary">(5) Ligar</a>
+                    <a href="<?php echo base_url("aluno/ligar"); ?>" class="btn btn-block btn-success">(2) Comentar</a>
+                    <a href="<?php // echo base_url("doces/excluir/$linha->idposts");           ?>" class="btn btn-block btn-danger">Desativar</a>
                 </td>
 
-                <td>
-                    <a href="<?php // echo base_url("doces/ativo/$linha->idposts");    ?>" class="btn btn-mini btn-block"><?php // $linha->idposts == 50 ? printf('Ativar') : printf('Desativar');    ?></a>
-                    <a href="<?php echo base_url("aluno/editar/"); ?>" class="btn btn-mini btn-block btn-warning">Editar</a>
-                    <a href="<?php // echo base_url("doces/excluir/$linha->idposts");    ?>" class="btn btn-mini btn-block btn-danger">Desativar</a>
+            </tr> 
+            <tr>
+                <td><?php //printf('%s', $linha->idposts);           ?> REginaldo José de Lima</td>
+                <td style="max-width: 300px">
+                    <p><strong>Último Curso</strong><?php //printf('%s', $linha->detalhes)           ?> Informática básica</p>
+                    <p><strong>Ano de conclusão:</strong> <?php // printf('%s', $linha->idposts)           ?> 2009</p>
                 </td>
+                <td>
+                    <a href="<?php echo base_url("aluno/ligar"); ?>" class="btn btn-block btn-primary">(5) Ligar</a>
+                    <a href="<?php echo base_url("aluno/ligar"); ?>" class="btn btn-block btn-success">(2) Comentar</a>
+                    <a href="<?php // echo base_url("doces/excluir/$linha->idposts");           ?>" class="btn btn-block btn-danger">Desativar</a>
+                </td>
+
+            </tr> 
+            <tr>
+                <td><?php //printf('%s', $linha->idposts);           ?> REginaldo José de Lima</td>
+                <td style="max-width: 300px">
+                    <p><strong>Último Curso</strong><?php //printf('%s', $linha->detalhes)           ?> Informática básica</p>
+                    <p><strong>Ano de conclusão:</strong> <?php // printf('%s', $linha->idposts)           ?> 2009</p>
+                </td>
+                <td>
+                    <a href="<?php echo base_url("aluno/ligar"); ?>" class="btn btn-block btn-primary">(5) Ligar</a>
+                    <a href="<?php echo base_url("aluno/ligar"); ?>" class="btn btn-block btn-success">(2) Comentar</a>
+                    <a href="<?php // echo base_url("doces/excluir/$linha->idposts");           ?>" class="btn btn-block btn-danger">Desativar</a>
+                </td>
+
             </tr> 
             <?php // } ?>
         </tbody>

@@ -3,13 +3,13 @@
     <div class="row-fluid">
         <form action="" method="post">
 
-            <label for="titulo">Nome usuario
-                <input name="nome" id="titulo" disabled="" type="text" class="input-xxlarge"/>
-            </label>
-            <label for="titulo">E-mail
-                <input name="nome" id="titulo" disabled="" type="email" class="input-xxlarge"/>
-            </label>
-
+            <p>Nome usuario: 
+                <strong>Nome usuário</strong>
+            </p>
+            <p>E-mail: 
+                <strong>E-mail usuário</strong>
+            </p>
+            <hr />
             <div class="row-fluid">
                 <label for="titulo" class="span6">Senha Atual
                     <input name="nome" required="" id="titulo" type="text" class="input-block-level"/>
@@ -28,7 +28,7 @@
             <div class="form-actions">
                 <div class="pull-right">
                     <a href="<?php echo base_url('usuarios/gerenciar') ?>" class="btn btn-large"/>Cancelar</a>
-                    <input type="submit" class="btn btn-success btn-large" value="Alterar"/>
+                    <input type="submit" class="btn btn-success btn-large" value="Atualizar"/>
                 </div>
             </div>
         </form>

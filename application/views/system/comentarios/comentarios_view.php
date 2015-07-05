@@ -3,18 +3,17 @@
         <div class="span3">
             <ul class="nav nav-tabs nav-stacked">
                 <li class="alert alert-danger"><strong>Painel Comentários</strong></li>
-                <li><a  href="<?php echo base_url("comentarios"); ?>">Gerenciar</a></li>
+                <li><a  href="<?php echo base_url("aluno/gerenciar"); ?>">Novo Comentário</a></li>
+                <li><a  href="<?php echo base_url("comentarios/meus_comentarios"); ?>">Meus comentários</a></li>
+                <li><a  href="<?php echo base_url("comentarios/desativados"); ?>">Comentarios desativados</a></li>
             </ul>
         </div>
         <div class="span9">
             <?php
             switch ($tela) {
-                case 'cadastrar':
-                    include_once 'pg/cadastrar.php';
-                    break;
 
-                case 'gerenciar':
-                    include_once 'pg/gerenciar.php';
+                case 'meus_comentarios':
+                    include_once 'pg/meus_comentarios.php';
                     break;
 
                 case 'editar':
@@ -26,7 +25,7 @@
                     break;
 
                 default:
-                    echo 'Página não ertfhncontrada';
+                    echo '<div class="alert alert-danger">Página não Encontrada</div>';
                     break;
             }
             ?>

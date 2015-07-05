@@ -24,5 +24,5 @@ function initSystem() {
     set_tema('header', load_modulo('header', '', 'includes'));
 
     set_tema('footer', load_modulo('footer', '', 'includes'));
-    set_tema('template', 'inicio_view', TRUE);
+    set_tema('template', 'inicio_view');
 }

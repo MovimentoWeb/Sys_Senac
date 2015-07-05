@@ -29,11 +29,6 @@
                 <label class="checkbox inline"><input name="1" type="radio"  value="3"> Secretaria | </label>
                 <label class="checkbox inline"><input name="1" type="radio"  value="4"> Professsor </label>
             </div>
-
-            <div class="span5 ">
-                <p><strong>Imagens para exibição (tamanho grande)</strong></p>
-                <input name="img1" class="input-block-level" type="file" />    
-            </div>
         </div>
         <label for="">Detalhes
             <textarea name="detalhes"  rows="3" class="input-block-level"></textarea>

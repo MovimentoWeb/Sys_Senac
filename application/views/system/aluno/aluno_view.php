@@ -26,6 +26,10 @@
                 case 'desativados':
                     include_once 'pg/desativados.php';
                     break;
+                
+                case 'ligar':
+                    include_once 'pg/ligar.php';
+                    break;
 
                 default:
                     echo 'Página não ertfhncontrada';

@@ -1,13 +1,11 @@
 <div class="well">
 
-    <legend><strong>Doces</strong> - Gerenciar</legend>
+    <legend><strong>Usuários</strong> - Gerenciar</legend>
     <table class="table table-hover table-striped">
         <thead>
             <tr>
-                <th>Cod</th>
-                <th>Título</th>
-                <th>Detalhes</th>
-                <th>Categorias</th>
+
+                <th>Dados</th>
                 <th>Ações</th>
             </tr>
         </thead>
@@ -17,21 +15,16 @@
             //foreach ($dados as $linha) {
             ?>
             <tr>
-                <td><?php //printf('%s', $linha->idposts);   ?></td>
-                <td style="min-width: 100px "><?php // printf('%s', $linha->nome)   ?></td>
                 <td style="max-width: 300px">
-                    <p><strong>Detalhes</strong><?php //printf('%s', $linha->detalhes)   ?></p>
-                    <p><strong>Postado por:</strong> <?php // printf('%s', $linha->idposts)   ?> </p>
-                    <p><strong>Data postagem</strong><?php // printf('%s', $linha->idposts)   ?></p>
-                </td>
-                <td style="max-width: 200px;">
-                    Categorias1; Categorias1; Categorias1; Categorias1; Categorias1; Categorias1; 
-                </td>
 
+                    <p><strong>Nome: </strong><?php //printf('%s', $linha->detalhes)       ?>Reginaldo josé de Lima</p>
+                    <p><strong>Tipo: </strong> <?php // printf('%s', $linha->idposts)       ?>Professor </p>
+                    <p><strong>Detalhes: </strong><?php // printf('%s', $linha->idposts)       ?>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                </td>
                 <td>
-                    <a href="<?php // echo base_url("doces/ativo/$linha->idposts");   ?>" class="btn btn-mini btn-block"><?php // $linha->idposts == 50 ? printf('Ativar') : printf('Desativar');   ?></a>
-                    <a href="<?php echo base_url("usuarios/editar/"); ?>" class="btn btn-mini btn-block btn-warning">Editar</a>
-                    <a href="<?php // echo base_url("doces/excluir/$linha->idposts");   ?>" class="btn btn-mini btn-block btn-danger">Excluir</a>
+                    <a href="<?php echo base_url("usuarios/editar/"); ?>" class="btn btn-block btn-warning">Alterar senha</a>
+                    <a href="<?php echo base_url("usuarios/editar/"); ?>" class="btn btn-block btn-warning">Editar</a>
+                    <a href="<?php // echo base_url("doces/excluir/$linha->idposts");       ?>" class="btn btn-block btn-danger">Excluir</a>
                 </td>
             </tr> 
             <?php // } ?>
