@@ -6,9 +6,9 @@ if (!defined('BASEPATH'))
 
 $autoload['packages'] = array();
 
-$autoload['libraries'] = array('parser', 'form_validation','sistema');
+$autoload['libraries'] = array('parser', 'form_validation','sistema','database');
 
-$autoload['helper'] = array('apoio','initSystem');
+$autoload['helper'] = array('form','apoio','initSystem','text','array','url');
 
 $autoload['config'] = array();
 

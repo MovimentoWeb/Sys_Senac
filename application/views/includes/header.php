@@ -15,7 +15,7 @@
                                 <ul class="nav"> 
                                     <li ><a class="brand" href="<?php echo base_url(); ?>"><strong>Sis-Tel</strong></a></li>
                                     <li class="divider-vertical"></li>
-                                    <li><a href="<?php echo base_url("usuarios"); ?>"><strong>Usuários</strong></a></li>
+                                    <li><a href="<?php echo base_url("usuarios/cadastrar"); ?>"><strong>Usuários</strong></a></li>
                                     <li class="divider-vertical"></li>
                                     <li><a href="<?php echo base_url("aluno/gerenciar"); ?>"><strong>Alunos</strong></a></li>
                                     <li class="divider-vertical"></li>

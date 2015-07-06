@@ -10,8 +10,7 @@ if (!defined('BASEPATH')) {
 
 function initSystem() {
     $CI = &get_instance();
-    $CI->load->library(array('sistema'));
-    $CI->load->helper('url', 'apoio');
+ 
 
     set_tema('CSSpagina', '');
     set_tema('JSpagina', '');

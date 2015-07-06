@@ -1,33 +1,38 @@
 <legend><strong>Usuarios</strong> - cadastrar</legend>
 <div class="row-fluid">
-    <form action="" method="post" enctype="multipart/form-data">
-        <label for="titulo">Nome usuario
-            <input name="nome" id="titulo" autofocus="" required="" type="text" class="input-block-level"/>
+    <form  method="POST" action="<?php echo base_url('usuarios/cadastrar') ?>">
+        <?php
+        if (validation_errors()) {
+            echo '<div class="alert alert-danger">' . validation_errors() . '</div>';
+        }
+        ?>
+        <?php erros_validacao() ?>
+        <label for="nome">Nome usuario
+            <input name="nome" id="nome" autofocus="" required="" type="text" class="input-block-level"/>
         </label>
         <div class="row-fluid">
             <div class="span4">
-                <label for="titulo">E-mail
-                    <input name="nome" id="titulo" required="" type="email" class="input-block-level"/>
+                <label for="email">E-mail
+                    <input name="email" id="email" required="" type="email" class="input-block-level"/>
                 </label>
             </div>
             <div class="span4">  
-                <label for="titulo">Senha
-                    <input name="nome" id="titulo" required="" type="text" class="input-block-level"/>
+                <label for="senha">Senha
+                    <input name="senha" id="senha" required="" type="password" class="input-block-level"/>
                 </label>
             </div>
             <div class="span4">  
-                <label for="titulo">Repita a senha
-                    <input name="nome" id="titulo" required="" type="text" class="input-block-level"/>
+                <label for="senha2">Repita a senha
+                    <input name="senha2" id="senha2" required="" type="password" class="input-block-level"/>
                 </label>
             </div>
         </div>
-
         <div class="row-fluid">
             <div class="span7 well well-small">
                 <p><strong>Tipo usuario:</strong></p>
-                <label class="checkbox inline"><input name="1" type="radio"  value="2"> Coordenador | </label>
-                <label class="checkbox inline"><input name="1" type="radio"  value="3"> Secretaria | </label>
-                <label class="checkbox inline"><input name="1" type="radio"  value="4"> Professsor </label>
+                <label class="checkbox inline"><input name="tipoUsuario" type="radio"  value="Coordenadora"> Coordenadora | </label>
+                <label class="checkbox inline"><input name="tipoUsuario" type="radio"  value="Secretaria"> Secretaria | </label>
+                <label class="checkbox inline"><input name="tipoUsuario" type="radio"  value="Professor"> Professsor </label>
             </div>
         </div>
         <label for="">Detalhes

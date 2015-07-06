@@ -8,7 +8,8 @@ class Crud_model extends CI_Model {
 
 //inserindo dados em tabelas
     public function crud_insert($tabela, $dados = NULL, $redirecionar = FALSE) {
-        echo 'entrou no crud insert - ';
+        echo '<br/>entrou no crud insert - ';
+        print_r($dados);
         if ($dados != null) {
             $this->db->insert($tabela, $dados);
             if ($redirecionar) {
@@ -52,7 +53,7 @@ class Crud_model extends CI_Model {
     public function crud_excluir($tabela, $id = null, $redirecionar = '') {
         if ($id != NULL) {
 
-            $this->db->where('id'.$tabela, $id);
+            $this->db->where('id' . $tabela, $id);
             $this->db->delete($tabela);
             if ($redirecionar) {
                 redirect($redirecionar);

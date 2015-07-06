@@ -16,32 +16,41 @@ class Aluno extends CI_Controller {
         set_tema('paginas', load_modulo('aluno_view', 'cadastrar', 'system/aluno'));
         load_template('template', 'inicio_view', TRUE);
     }
+
     public function cadastrar() {
         initSystem();
-        
+
+        if ($this->form_validation->rum() == TRUE) {
+            echo 'já está validando';
+        }
+
         set_tema('titulo', 'Cadastrar');
         set_tema('paginas', load_modulo('aluno_view', 'cadastrar', 'system/aluno'));
         load_template('template', 'inicio_view', TRUE);
     }
+
     public function gerenciar() {
         initSystem();
-        
+
         set_tema('titulo', 'Gerenciar');
         set_tema('paginas', load_modulo('aluno_view', 'gerenciar', 'system/aluno'));
         load_template('template', 'inicio_view', TRUE);
     }
+
     public function editar() {
         initSystem();
         set_tema('titulo', 'Editar');
         set_tema('paginas', load_modulo('aluno_view', 'editar', 'system/aluno'));
         load_template('template', 'inicio_view', TRUE);
     }
+
     public function desativados() {
         initSystem();
         set_tema('titulo', 'Alunos desativados');
         set_tema('paginas', load_modulo('aluno_view', 'desativados', 'system/aluno'));
         load_template('template', 'inicio_view', TRUE);
     }
+
     public function ligar() {
         initSystem();
         set_tema('titulo', 'Ligar');
